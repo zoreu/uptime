@@ -2,7 +2,7 @@ name: rodar rotina
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # rodar a cada 10min
+    - cron: '*/1 * * * *' # rodar a cada 10min
   workflow_dispatch:
 
 jobs:

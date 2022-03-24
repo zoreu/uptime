@@ -1,10 +1,8 @@
 name: rodar rotina
 
 on:
-  push:
-    branches: [ main ]
   schedule:
-    - cron: '*/1 * * * *' # rodar a cada 10min
+    - cron: '*/6 * * * *' # rodar a cada 6min
   workflow_dispatch:
 
 jobs:
@@ -21,4 +19,4 @@ jobs:
           python-version: 3.9 # Install the python version needed
 
       - name: Execute Python script # Run the app.py
-        run: pip install requests && python uptime.py                   
+        run: pip install requests && python uptime.py

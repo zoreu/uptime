@@ -1,23 +1,26 @@
-name: rotina para site
+name: Python Script Workflow
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # rodar a cada 10min
+  - cron: '*/10 * * * *' # rodar a cada 10min
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v2 # Checkout the repository content to github runner.
 
-      - name: checkout repo content
-        uses: actions/checkout@v2 # checkout the repository content to github runner
-
-      - name: setup python
+      - name: Setup Python Version
         uses: actions/setup-python@v2
         with:
-          python-version: '3.7.7' # install the python version needed
-          
-      - name: execute py script # run sj-gobierno.py to get the latest data
-        env: 
-          EMAIL_ADDRESS: ${{ secrets.email }}
+          python-version: 3.8 # Install the python version needed
+
+      - name: Install Python dependencies
+        uses: py-actions/py-dependency-install@v2
+        with:
+          path: "requirements.txt"
+
+      - name: Execute Python script # Run the app.py
         run: python uptime.py

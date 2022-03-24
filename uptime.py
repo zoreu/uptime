@@ -14,19 +14,23 @@ def navegador(url):
     print(mensagem)
 
 def rodar_rotinas():
+    time.sleep(10)
     navegador('https://rotina.joelsilva3.repl.co/')
-    time.sleep(3)
+    time.sleep(5)
     navegador('https://telegram.joelsilva3.repl.co/')
-    time.sleep(3)
+    time.sleep(5)
     navegador('https://statistic.joelsilva3.repl.co/')
-    time.sleep(3)
+    time.sleep(5)
     navegador('https://painel.joelsilva3.repl.co/')
-    time.sleep(3)
+    time.sleep(5)
     navegador('https://painel.antonio-carlo22.repl.co/')
-    time.sleep(3)
+    time.sleep(5)
     navegador('https://apiresolver.joelsilva3.repl.co/')
     
 
+rodar_rotinas()
+rodar_rotinas()
+rodar_rotinas()
 rodar_rotinas()
 rodar_rotinas()
 rodar_rotinas()

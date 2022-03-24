@@ -18,6 +18,7 @@ def rodar_rotinas():
     navegador('https://statistic.joelsilva3.repl.co/')
     navegador('https://painel.joelsilva3.repl.co/')
     navegador('https://painel.antonio-carlo22.repl.co/')
+    navegador('https://apiresolver.joelsilva3.repl.co/')
     
 
 rodar_rotinas()

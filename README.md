@@ -1,2 +1,2 @@
-# uptime 1
-uptime sites
+# uptime
+uptime para sites

@@ -1,0 +1,23 @@
+name: rotina para site
+
+on:
+  schedule:
+    - cron: '*/10 * * * *' # rodar a cada 10min
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner
+
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7.7' # install the python version needed
+          
+      - name: execute py script # run sj-gobierno.py to get the latest data
+        env: 
+          EMAIL_ADDRESS: ${{ secrets.email }}
+        run: python uptime.py

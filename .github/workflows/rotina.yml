@@ -2,7 +2,7 @@ name: rodar rotina
 
 on:
   schedule:
-    - cron: '*/6 * * * *' # rodar a cada 6min
+    - cron: '*/15 * * * *' # rodar a cada 15min
   workflow_dispatch:
 
 jobs:
@@ -19,4 +19,4 @@ jobs:
           python-version: 3.9 # Install the python version needed
 
       - name: Execute Python script # Run the app.py
-        run: pip install requests && python uptime.py
+        run: pip install requests && python uptime.py               

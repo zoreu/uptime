@@ -1,5 +1,9 @@
 name: rotina para site
 
+on:
+  schedule:
+    - cron: '*/1 * * * *' # rodar a cada 10min
+
 jobs:
   build:
     runs-on: ubuntu-latest

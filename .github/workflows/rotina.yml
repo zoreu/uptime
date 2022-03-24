@@ -3,6 +3,7 @@ name: rodar rotina
 on:
   schedule:
     - cron: '*/1 * * * *' # rodar a cada 10min
+  workflow_dispatch:
 
 jobs:
   build:
@@ -13,9 +14,9 @@ jobs:
         uses: actions/checkout@v2 # Checkout the repository content to github runner.
 
       - name: Setup Python Version
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v2
         with:
-          python-version: 3.8 # Install the python version needed
+          python-version: 3.9 # Install the python version needed
 
       - name: Execute Python script # Run the app.py
         run: pip install requests && python uptime.py                   

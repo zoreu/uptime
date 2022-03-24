@@ -2,7 +2,7 @@ name: rotina para site
 
 on:
   schedule:
-    - cron: '*/1 * * * *' # rodar a cada 10min
+    - cron: '*/10 * * * *' # rodar a cada 10min
 
 jobs:
   build:

@@ -21,8 +21,6 @@ def rodar_rotinas():
     #time.sleep(5)
     navegador('https://statistic.joelsilva3.repl.co/')
     time.sleep(5)
-    navegador('https://painel.joelsilva3.repl.co/')
-    time.sleep(5)
     navegador('https://painel.antonio-carlo22.repl.co/')
     time.sleep(5)
     navegador('https://apiresolver.joelsilva3.repl.co/')

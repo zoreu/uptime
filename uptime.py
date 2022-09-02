@@ -26,6 +26,9 @@ def rodar_rotinas():
     navegador('https://apiresolver.joelsilva3.repl.co/')
     time.sleep(5)
     navegador('https://apishowdebola.joelsilva3.repl.co/')
+    time.sleep(5)
+    navegador('https://apifutebol.aguiadefogo.repl.co/')
+    
     
 
 rodar_rotinas()

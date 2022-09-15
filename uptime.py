@@ -29,7 +29,7 @@ def rodar_rotinas():
     time.sleep(5)
     navegador('https://apifutebol.aguiadefogo.repl.co/')
     time.sleep(5)
-    navegador('https://zeno.joelsilva3.repl.co/')
+    navegador('https://stream.zeno.fm/tgfzzqmz1f9uv')
     
     
     

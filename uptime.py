@@ -32,6 +32,9 @@ def rodar_rotinas():
     navegador('https://stream.zeno.fm/tgfzzqmz1f9uv')
     time.sleep(5)
     navegador('https://zeno.joelsilva3.repl.co/')
+    time.sleep(5)
+    navegador('https://proxysite.joelsilva3.repl.co/')
+    
     
     
     

@@ -34,10 +34,8 @@ def rodar_rotinas():
     navegador('https://zeno.joelsilva3.repl.co/')
     time.sleep(5)
     navegador('https://proxysite.joelsilva3.repl.co/')
-    
-    
-    
-    
+    time.sleep(5)
+    navegador('https://apitest.zoreu.repl.co/')
     
 
 rodar_rotinas()
